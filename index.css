@@ -46,9 +46,11 @@ main {
     border-radius: 20px;
     margin-top: 50px;
     width: 80vw;
-    max-width: 1100px;
+    max-width: 1200px;
     min-width: 735px;
     padding: 25px;
+    margin-bottom: 50px;
+
 
 }
 
@@ -108,7 +110,7 @@ article {
     gap: 10px;
     width: 98%;
     min-width: 670px;
-    height: 98vh;
+    height: 96vh;
     background-color: rgba(0, 0, 0, 0.421);
     border-radius: 20px;
     border: solid rgba(255, 255, 255, 0.711) 1px;
@@ -118,14 +120,14 @@ article {
 /*--ARTICLE-1-BIG-TEXTBOX--*/
 div.textbox {
     display: flex;
-    height: 78%;
+    height: 75%;
     background-color: rgba(162, 77, 77, 0);
 }
 
 div.textbox section:first-child {
     background-color: rgba(77, 162, 83, 0);
     height: 100%;
-    width: 63%;
+    width: 65%;
 }
 
 div.textbox section:first-child h2 {
@@ -155,12 +157,12 @@ div.textbox section:first-child p:nth-of-type(2) {
     padding-left: 6%;
 }
 
-/*--ARTICLE-1-ALBUM-PART   GÖRA OM TILL GRID--*/
+/*--ARTICLE-1-ALBUM-PART--*/
 div.textbox section:nth-child(2) {
     background-color: rgba(77, 125, 162, 0);
     height: 100%;
-    width: 37%;
-    min-width: 350px;
+    width: 35%;
+    min-width: 320px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -168,16 +170,11 @@ div.textbox section:nth-child(2) {
 }
 
 
-div.textbox section:nth-child(2) aside {
+div.textbox section:nth-child(2) aside {}
 
-    height: 65%;
+img {
+    width: 100%;
     border-radius: 25px 25px 0 0;
-    background-color: rgb(238, 203, 0);
-    background-image: url(images/cover.jpg);
-    background-position-x: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-
 }
 
 div.textbox section:nth-child(2) aside:hover {
@@ -185,24 +182,23 @@ div.textbox section:nth-child(2) aside:hover {
     background-position-x: center;
     background-size: contain;
     background-repeat: no-repeat;
-    animation: image 0.2s;
+    animation: image1 0.4s;
     background-image: url('images/cover-inside.jpeg');
-    background-color: #2A1B1E;
 
 }
 
-@keyframes image {
+@keyframes image1 {
     0% {
         background-image: url('images/cover.jpg');
         opacity: 66%;
-        background-color: rgb(238, 203, 0);
+
 
     }
 
     25% {
         background-image: url('images/cover.jpg');
         opacity: 33%;
-        background-color: rgb(238, 203, 0);
+
 
     }
 
@@ -295,7 +291,7 @@ div.bar {
     justify-content: flex-end;
     align-self: end;
     gap: 7px;
-    height: 22%;
+    height: 25%;
     width: 100%;
     background-color: rgba(78, 77, 162, 0);
 }
@@ -343,4 +339,329 @@ div.bar section:nth-child(3) {
 
 div.bar section:nth-child(4) {
     border-radius: 30px 30px 0 30px;
+}
+
+
+/*--ARTICLE-2-BIG-TEXTBOX--*/
+article:nth-of-type(2) {
+    margin-top: -55px;
+}
+
+div.textbox1 {
+    display: flex;
+    height: 78%;
+    background-color: rgba(162, 77, 77, 0);
+}
+
+div.textbox1 section:first-child {
+    background-color: rgba(77, 162, 83, 0);
+    height: 100%;
+    width: 63%;
+}
+
+div.textbox1 section:first-child h2 {
+    font-family: 'Bungee';
+    font-size: 35px;
+    color: rgb(238, 238, 238);
+    margin: 0;
+}
+
+div.textbox1 section:first-child h3 {
+    font-family: 'BarlowBold';
+    font-size: 31px;
+    color: rgb(238, 238, 238);
+    margin: 0;
+}
+
+div.textbox1 section:first-child p {
+    font-family: 'BarlowSemi';
+    font-size: 15px;
+    word-spacing: 1px;
+    color: rgb(238, 238, 238);
+    margin: 8% 2% 0 0;
+}
+
+div.textbox1 section:first-child p:nth-of-type(2) {
+    margin: 0;
+    padding-left: 6%;
+}
+
+/*--ARTICLE-1-ALBUM-PART--*/
+div.textbox1 section:nth-child(2) {
+    background-color: rgba(77, 125, 162, 0);
+    height: 100%;
+    width: 37%;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+
+div.textbox1 section:nth-child(2) aside {
+
+    height: 65%;
+    border-radius: 25px 25px 0 0;
+    background-color: rgb(238, 159, 0);
+    background-image: url(images/cover1.jpeg);
+    background-position-x: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+div.textbox1 section:nth-child(2) aside:hover {
+
+    background-position-x: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: image 0.2s;
+    background-image: url('images/cover-inside1.jpeg');
+    background-color: #2A1B1E;
+
+}
+
+@keyframes image {
+    0% {
+        background-image: url('images/cover1.jpeg');
+        opacity: 66%;
+        background-color: rgb(238, 203, 0);
+
+    }
+
+    25% {
+        background-image: url('images/cover1.jpeg');
+        opacity: 33%;
+        background-color: rgb(238, 203, 0);
+
+    }
+
+    40% {
+        background-image: url('images/cover1.jpeg');
+        opacity: 10%;
+        background-color: rgb(238, 203, 0);
+
+    }
+
+    50% {
+        background-image: url('images/cover-inside1.jpeg');
+        opacity: 10%;
+        background-color: #2A1B1E;
+    }
+
+    75% {
+
+        background-image: url('images/cover-inside1.jpeg');
+        opacity: 33%;
+        background-color: #2A1B1E;
+
+    }
+
+    100% {
+
+        background-image: url('images/cover-inside1.jpeg');
+        opacity: 66%;
+        background-color: #2A1B1E;
+    }
+}
+
+
+div.textbox1 section:nth-child(2) nav {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 10px;
+}
+
+div.textbox1 section:nth-child(2) nav div:first-child {
+    flex-grow: 1;
+    background-color: rgb(55, 128, 201);
+    border-radius: 0 0 0 25px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+div.textbox1 section:nth-child(2) nav div:nth-child(2) {
+    flex-grow: 1;
+    background-color: rgb(55, 128, 201);
+    border-radius: 0 0 25px 0;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+div.textbox1 section:nth-child(2) div h4 {
+    color: rgb(213, 213, 178);
+    font-size: 18px;
+    font-family: 'BarlowBold';
+    font-weight: 100;
+    margin: 0;
+    padding-top: 5%;
+}
+
+div.textbox1 section:nth-child(2) div ol {
+    color: rgb(213, 213, 178);
+    font-size: 13px;
+    margin: 0;
+    padding-left: 12px;
+
+}
+
+div.textbox1 section:nth-child(2) div:nth-child(2) {
+    border-radius: 0 0 0 25px;
+}
+
+div.textbox1 section:nth-child(2) div:nth-child(3) {
+    border-radius: 0 0 25px 0;
+}
+
+/*--ARTICLE-2-BOTTOM-BAR--*/
+div.bar1 {
+    display: flex;
+    justify-content: flex-end;
+    align-self: end;
+    gap: 7px;
+    height: 22%;
+    width: 100%;
+    background-color: rgba(78, 77, 162, 0);
+}
+
+div.bar1 section {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'BarlowSemi';
+    line-height: 1.3;
+    color: rgb(55, 128, 201);
+    font-size: 14px;
+    padding: 17px;
+}
+
+div.bar1 section:first-child {
+    width: 33%;
+    border-radius: 30px 30px 30px 0;
+}
+
+div.bar1 section {
+    width: 17%;
+    height: 100%;
+    background-color: rgb(213, 213, 178);
+    border-radius: 30px;
+}
+
+div.bar1 section:nth-child(2) {
+    border-radius: 0 30px 30px 30px;
+}
+
+div.bar1 section:nth-child(3) {
+    border-radius: 0 30px 30px 30px;
+    background-image: url(images/eddie.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    justify-content: flex-start;
+    align-items: flex-end;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px;
+    width: 33%;
+}
+
+div.bar1 section:nth-child(4) {
+    border-radius: 30px 30px 0 30px;
+}
+
+
+
+/*--Anpassning--*/
+
+@media only screen and (max-width: 800px) and (min-width: 500px) {
+
+    div.textbox section:first-child h2,
+    div.textbox1 section:first-child h2 {
+        font-family: 'Bungee';
+        font-size: 3vw;
+        color: rgb(238, 238, 238);
+        margin: 0;
+    }
+
+    div.textbox section:first-child h3,
+    div.textbox1 section:first-child h3 {
+        font-family: 'BarlowBold';
+        font-size: 2.4vw;
+        color: rgb(238, 238, 238);
+        margin: 0;
+    }
+
+    div.textbox section:first-child p,
+    div.textbox1 section:first-child p {
+        font-family: 'BarlowSemi';
+        font-size: 1.2vw;
+        word-spacing: 1px;
+        color: rgb(238, 238, 238);
+        margin: 8% 2% 0 0;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 800px) {
+
+    div.textbox section:first-child h2,
+    div.textbox1 section:first-child h2 {
+        font-family: 'Bungee';
+        font-size: 24px;
+        color: rgb(238, 238, 238);
+        margin: 0;
+    }
+
+    div.textbox section:first-child h3,
+    div.textbox1 section:first-child h3 {
+        font-family: 'BarlowBold';
+        font-size: 20px;
+        color: rgb(238, 238, 238);
+        margin: 0;
+    }
+
+    div.textbox section:first-child p,
+    div.textbox1 section:first-child p {
+        font-family: 'BarlowSemi';
+        font-size: 10px;
+        word-spacing: 1px;
+        color: rgb(238, 238, 238);
+        margin: 8% 2% 0 0;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 900px) {
+
+    div.textbox section:first-child h2,
+    div.textbox1 section:first-child h2 {
+        font-family: 'Bungee';
+        font-size: 3vw;
+        color: rgb(238, 238, 238);
+        margin: 0;
+    }
+
+    div.textbox section:first-child h3,
+    div.textbox1 section:first-child h3 {
+        font-family: 'BarlowBold';
+        font-size: 2.4vw;
+        color: rgb(238, 238, 238);
+        margin: 0;
+    }
+
+    div.textbox section:first-child p,
+    div.textbox1 section:first-child p {
+        font-family: 'BarlowSemi';
+        font-size: 1.2vw;
+        word-spacing: 1px;
+        color: rgb(238, 238, 238);
+        margin: 8% 2% 0 0;
+    }
+
 }
