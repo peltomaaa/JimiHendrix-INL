@@ -157,7 +157,6 @@ div.textbox section:first-child p:nth-of-type(2) {
 
 /*--ARTICLE-1-ALBUM-PART--*/
 div.textbox section:nth-child(2) {
-    background-color: rgba(77, 125, 162, 0);
     height: 100%;
     width: 35%;
     min-width: 250px;
@@ -169,7 +168,7 @@ div.textbox section:nth-child(2) {
 
 div.textbox section:nth-child(2) aside {
     background-image: url('images/cover-inside.jpeg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     border-radius: 25px 25px 0 0;
 }
@@ -177,14 +176,11 @@ div.textbox section:nth-child(2) aside {
 img {
     width: 100%;
     border-radius: 25px 25px 0 0;
-    transition: opacity 0.8s;
+    transition: opacity 0.6s;
 }
 
 div.textbox section:nth-child(2) aside img:hover {
-
     opacity: 0%;
-
-
 }
 
 
@@ -203,8 +199,6 @@ div.textbox section:nth-child(2) nav div:first-child {
     padding-left: 20px;
     display: flex;
     flex-direction: column;
-
-
 }
 
 div.textbox section:nth-child(2) nav div:nth-child(2) {
@@ -214,10 +208,7 @@ div.textbox section:nth-child(2) nav div:nth-child(2) {
     padding-left: 20px;
     display: flex;
     flex-direction: column;
-
 }
-
-
 
 div.textbox section:nth-child(2) div h4 {
     color: rgb(200, 97, 135);
@@ -233,7 +224,6 @@ div.textbox section:nth-child(2) div ol {
     font-size: 13px;
     margin: 0;
     padding-left: 12px;
-
 }
 
 div.textbox section:nth-child(2) div:nth-child(2) {
@@ -267,11 +257,6 @@ div.bar section {
     padding: 17px;
 }
 
-div.bar section:first-child {
-    margin-right: 17%;
-    border-radius: 30px 0 30px 30px;
-}
-
 div.bar section {
     width: 17%;
     height: 100%;
@@ -279,12 +264,20 @@ div.bar section {
     border-radius: 30px;
 }
 
+div.bar section:first-child {
+    border-radius: 30px 0 30px 30px;
+}
+
 div.bar section:nth-child(2) {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+div.bar section:nth-child(3) {
     width: 33%;
     border-radius: 30px 30px 30px 0;
 }
 
-div.bar section:nth-child(3) {
+div.bar section:nth-child(4) {
     border-radius: 0 30px 30px 30px;
     background-image: url(images/chas.jpg);
     background-size: cover;
@@ -296,7 +289,7 @@ div.bar section:nth-child(3) {
     text-shadow: 5px;
 }
 
-div.bar section:nth-child(4) {
+div.bar section:nth-child(5) {
     border-radius: 30px 30px 0 30px;
 }
 
@@ -308,14 +301,14 @@ article:nth-of-type(2) {
 
 div.textbox1 {
     display: flex;
-    height: 78%;
+    height: 75%;
     background-color: rgba(162, 77, 77, 0);
 }
 
 div.textbox1 section:first-child {
     background-color: rgba(77, 162, 83, 0);
     height: 100%;
-    width: 63%;
+    width: 65%;
 }
 
 div.textbox1 section:first-child h2 {
@@ -345,83 +338,28 @@ div.textbox1 section:first-child p:nth-of-type(2) {
     padding-left: 6%;
 }
 
-/*--ARTICLE-1-ALBUM-PART--*/
+/*--ARTICLE-2-ALBUM-PART--*/
 div.textbox1 section:nth-child(2) {
-    background-color: rgba(77, 125, 162, 0);
     height: 100%;
-    width: 37%;
+    width: 35%;
+    min-width: 250px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-
 }
 
 
 div.textbox1 section:nth-child(2) aside {
-
-    height: 65%;
-    border-radius: 25px 25px 0 0;
-    background-color: rgb(238, 159, 0);
-    background-image: url(images/cover1.jpeg);
-    background-position-x: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-
-}
-
-div.textbox1 section:nth-child(2) aside:hover {
-
-    background-position-x: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation: image 0.2s;
     background-image: url('images/cover-inside1.jpeg');
-    background-color: #2A1B1E;
-
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px 25px 0 0;
 }
 
-@keyframes image {
-    0% {
-        background-image: url('images/cover1.jpeg');
-        opacity: 66%;
-        background-color: rgb(238, 203, 0);
 
-    }
 
-    25% {
-        background-image: url('images/cover1.jpeg');
-        opacity: 33%;
-        background-color: rgb(238, 203, 0);
-
-    }
-
-    40% {
-        background-image: url('images/cover1.jpeg');
-        opacity: 10%;
-        background-color: rgb(238, 203, 0);
-
-    }
-
-    50% {
-        background-image: url('images/cover-inside1.jpeg');
-        opacity: 10%;
-        background-color: #2A1B1E;
-    }
-
-    75% {
-
-        background-image: url('images/cover-inside1.jpeg');
-        opacity: 33%;
-        background-color: #2A1B1E;
-
-    }
-
-    100% {
-
-        background-image: url('images/cover-inside1.jpeg');
-        opacity: 66%;
-        background-color: #2A1B1E;
-    }
+div.textbox1 section:nth-child(2) aside img:hover {
+    opacity: 0%;
 }
 
 
@@ -430,7 +368,9 @@ div.textbox1 section:nth-child(2) nav {
     flex-direction: row;
     flex-grow: 1;
     gap: 10px;
+    flex-basis: 140px;
 }
+
 
 div.textbox1 section:nth-child(2) nav div:first-child {
     flex-grow: 1;
@@ -486,6 +426,7 @@ div.bar1 {
     gap: 7px;
     height: 22%;
     width: 100%;
+    flex-basis: 170px;
     background-color: rgba(78, 77, 162, 0);
 }
 
@@ -537,23 +478,34 @@ div.bar1 section:nth-child(4) {
 /*--Anpassning-Mobil--*/
 @media only screen and (max-width: 500px) and (min-width: 300px) {
 
+
+    body {
+        background-image: url(images/mobile.jpeg);
+        background-position-x: center;
+    }
+
     main {
-        width: 95vw;
-        max-width: none;
+        margin: 0;
+        padding-bottom: 100px;
+        border-radius: 0;
+        width: 90%;
+        height: 100%;
+        gap: 60px;
     }
 
     header {
-        width: 95vw;
+
         text-align: center;
     }
 
     header h1 {
+        margin: 0;
         font-size: 65px;
     }
 
     nav {
         display: flex;
-        width: 95vw;
+        width: 90vw;
         height: 50px;
         gap: 5px;
     }
@@ -563,54 +515,136 @@ div.bar1 section:nth-child(4) {
         font-size: 15px;
     }
 
-    /*--ARTICLE-SQUARE-1--*/
+    /*--ARTICLE-SQUARES--*/
     article {
-        width: 98vw;
-        min-width: none;
-        height: 200vh;
+
+        width: 94%;
     }
 
-    div.textbox {
+
+    div.textbox,
+    div.textbox1 {
         flex-direction: column;
-        height: 75%;
+        height: 80%;
+        min-width: 0px;
 
     }
 
-    div.textbox section:first-child {
+    div.textbox section:nth-child(2),
+    div.textbox1 section:nth-child(2) {
+        width: 100%;
+        min-width: 0px;
+    }
+
+    div.textbox section:nth-child(2) aside img:hover,
+    div.textbox1 section:nth-child(2) aside img:hover {
+        opacity: 100%;
+    }
+
+    div.textbox section:nth-child(2) nav,
+    div.textbox1 section:nth-child(2) nav {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        gap: 10px;
+        flex-basis: 180px;
+        width: 100%;
+    }
+
+
+    div.textbox section:nth-child(2) div h4,
+    div.textbox1 section:nth-child(2) div h4 {
+        font-size: 23px;
+        padding-top: 15px;
+    }
+
+    div.textbox section:nth-child(2) div ol,
+    div.textbox1 section:nth-child(2) div ol {
+        font-size: 16px;
+
+    }
+
+    div.textbox section:first-child,
+    div.textbox1 section:first-child {
         background-color: rgba(77, 162, 83, 0);
-        height: 100vh;
         width: 100%;
         order: 2;
     }
 
 
-
-
-
     div.textbox section:first-child h2,
     div.textbox1 section:first-child h2 {
-        font-family: 'Bungee';
-        font-size: 5vw;
-        color: rgb(238, 238, 238);
         margin: 0;
+        margin-top: 10px;
+        font-size: 30px;
     }
 
     div.textbox section:first-child h3,
     div.textbox1 section:first-child h3 {
-        font-family: 'BarlowBold';
-        font-size: 4vw;
-        color: rgb(238, 238, 238);
-        margin: 0;
+        font-size: 22px;
     }
 
     div.textbox section:first-child p,
     div.textbox1 section:first-child p {
         font-family: 'BarlowSemi';
-        font-size: 2vw;
+        font-size: 17px;
         word-spacing: 1px;
-        color: rgb(238, 238, 238);
         margin: 8% 2% 0 0;
     }
+
+
+    /*--ARTICLE-1-BOTTOM-BAR--*/
+    div.bar,
+    div.bar1 {
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        flex-basis: 0;
+        height: 20%;
+    }
+
+    div.bar section,
+    div.bar1 section {
+        font-size: 13px;
+        padding-top: 20px;
+    }
+
+    div.bar section,
+    div.bar1 section {
+        height: 50%;
+        width: 32%;
+        flex-grow: 1;
+    }
+
+    div.bar section:first-child {
+        order: 1;
+    }
+
+    div.bar section:nth-child(2) {
+        order: 3;
+    }
+
+    div.bar section:nth-child(3) {
+        width: 65%;
+        order: 2;
+    }
+
+    div.bar section:nth-child(4) {
+        order: 4;
+    }
+
+    div.bar section:nth-child(5) {
+        order: 5;
+    }
+
+    div.bar1 section:first-child {
+        width: 65%;
+    }
+
+    div.bar1 section:nth-child(3) {
+        width: 65%;
+    }
+
 }
 
 /*--Anpassning-Desktop--*/
