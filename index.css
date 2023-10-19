@@ -34,7 +34,7 @@ body {
     align-items: center;
     margin: 0;
     box-sizing: border-box;
-    background-image: url(images/backround.jpeg);
+    background-image: url(images/backround.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -445,16 +445,14 @@ main p:nth-child(5) {
     }
 
     div.textbox section:first-child {
-        background-color: rgba(77, 162, 83, 0);
         width: 100%;
         order: 2;
     }
 
 
     div.textbox section:first-child h2 {
-        margin: 0;
-        margin-top: 10px;
         font-size: 30px;
+        margin-top: 10px;
     }
 
     div.textbox section:first-child h3 {
@@ -462,10 +460,7 @@ main p:nth-child(5) {
     }
 
     div.textbox section:first-child p {
-        font-family: 'BarlowSemi';
         font-size: 17px;
-        word-spacing: 1px;
-        margin: 8% 2% 0 0;
     }
 
 
