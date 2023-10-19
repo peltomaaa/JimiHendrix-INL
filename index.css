@@ -175,7 +175,7 @@ div.textbox section:nth-child(2) aside {
 
 img {
     width: 100%;
-    border-radius: 25px 25px 0 0;
+    border-radius: 20px 20px 0 0;
     transition: opacity 0.6s;
 }
 
@@ -197,7 +197,7 @@ div.textbox section:nth-child(2) footer {
 div.textbox section:nth-child(2) footer div:first-child {
     flex-grow: 1;
     background-color: rgb(255, 217, 0);
-    border-radius: 0 0 0 25px;
+    border-radius: 0 0 0 20px;
     padding-left: 20px;
     display: flex;
     flex-direction: column;
@@ -206,7 +206,7 @@ div.textbox section:nth-child(2) footer div:first-child {
 div.textbox section:nth-child(2) footer div:nth-child(2) {
     flex-grow: 1;
     background-color: rgb(255, 217, 0);
-    border-radius: 0 0 25px 0;
+    border-radius: 0 0 20px 0;
     padding-left: 20px;
     display: flex;
     flex-direction: column;
@@ -258,7 +258,7 @@ div.bar section {
 
 /*--SECTION-1--*/
 div.bar section:first-child {
-    border-radius: 30px 0 30px 30px;
+    border-radius: 20px 0 20px 20px;
 }
 
 /*--SECTION-2--*/
@@ -269,12 +269,12 @@ div.bar section:nth-child(2) {
 /*--SECTION-3--*/
 div.bar section:nth-child(3) {
     width: 33%;
-    border-radius: 30px 30px 30px 0;
+    border-radius: 20px 20px 20px 0;
 }
 
 /*--SECTION-4--*/
 div.bar section:nth-child(4) {
-    border-radius: 0 30px 30px 30px;
+    border-radius: 0 20px 20px 20px;
     background-image: url(images/chas.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -286,7 +286,7 @@ div.bar section:nth-child(4) {
 }
 
 div.bar section:nth-child(5) {
-    border-radius: 30px 30px 0 30px;
+    border-radius: 20px 20px 0 20px;
 }
 
 
@@ -326,32 +326,32 @@ article:nth-of-type(2) div.bar section {
 /*--SECTION-1--*/
 article:nth-of-type(2) div.bar section:first-child {
     width: 33%;
-    border-radius: 30px 30px 30px 0;
+    border-radius: 20px 20px 20px 0;
 }
 
 /*--SECTION-2--*/
 article:nth-of-type(2) div.bar section:nth-child(2) {
-    border-radius: 0 30px 30px 30px;
+    border-radius: 0 20px 20px 20px;
 }
 
 /*--SECTION-3--*/
 article:nth-of-type(2) div.bar section:nth-child(3) {
-    border-radius: 0 30px 30px 30px;
+    border-radius: 0 20px 20px 20px;
     background-image: url(images/eddie.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
     justify-content: flex-start;
     align-items: flex-end;
-    color: rgb(255, 255, 255);
-    text-shadow: 5px;
+    color: rgb(227, 227, 227);
+    text-shadow: 5px rgb(34, 34, 34);
     width: 33%;
 }
 
 /*--SECTION-4--*/
 article:nth-of-type(2) div.bar section:nth-child(4) {
     background: rgb(237, 233, 200);
-    border-radius: 30px 30px 0 30px;
+    border-radius: 20px 20px 0 20px;
 }
 
 
@@ -369,6 +369,8 @@ main p:nth-child(5) {
     body {
         background-image: url(images/mobile.jpeg);
         background-position-x: center;
+        min-width: 335px;
+        width: 100%;
     }
 
     main {
@@ -384,7 +386,7 @@ main p:nth-child(5) {
 
     header h1 {
         margin: 0;
-        font-size: 65px;
+        font-size: 15vw;
     }
 
     nav {
@@ -414,6 +416,7 @@ main p:nth-child(5) {
 
     div.textbox section:nth-child(2) {
         width: 100%;
+        min-width: 150px;
 
     }
 
@@ -427,7 +430,6 @@ main p:nth-child(5) {
         flex-grow: 1;
         gap: 10px;
         flex-basis: 180px;
-
         width: 100%;
     }
 
@@ -467,7 +469,7 @@ main p:nth-child(5) {
     }
 
 
-    /*--ARTICLE-1-BOTTOM-BAR--*/
+    /*--ARTICLE-BOTTOM-BAR--*/
     div.bar {
         justify-content: flex-start;
         align-content: flex-start;
@@ -478,12 +480,12 @@ main p:nth-child(5) {
 
     div.bar section {
         font-size: 13px;
-        padding-top: 20px;
+
     }
 
     div.bar section {
         height: 50%;
-        width: 32%;
+        width: 31%;
         flex-grow: 1;
     }
 
@@ -492,6 +494,7 @@ main p:nth-child(5) {
     }
 
     div.bar section:nth-child(2) {
+
         order: 3;
     }
 
